@@ -413,6 +413,12 @@ void check_str()
 	/* Enable pci device and init VGA device */
 	_pci_devinit(1);
 
+	*(unsigned int *)0xc0060050 = 0x1;
+	*(unsigned int *)0xc0060054 = 0x1000;
+	*(unsigned int *)0xc0060058 = 0x1000;
+	*(unsigned int *)0xc006005c = 0x1000;
+
+
 	/* fixup pcie config */
 	ls_pcie_config_set();
 	/* jump to kernel... */

@@ -2013,6 +2013,28 @@ static int rtl88e1111_config_init(synopGMACdevice *gmacdev)
 	return 0;
 }
 #endif
+static int yt8511_config_init(synopGMACdevice *gmacdev)
+{
+       int retval, err;
+       u16 data;
+
+       PRINTD("==== YT8511!\n");
+       err = synopGMAC_write_phy_reg(gmacdev->MacBase,gmacdev->PhyBase,0x1e,0x27);
+       synopGMAC_read_phy_reg(gmacdev->MacBase,gmacdev->PhyBase,0x1f,&data);
+       data = data & (~(1 << 15)) ;
+       err = synopGMAC_write_phy_reg(gmacdev->MacBase,gmacdev->PhyBase,0x1e,0x27);
+       err = synopGMAC_write_phy_reg(gmacdev->MacBase,gmacdev->PhyBase,0x1f,data);
+
+       err = synopGMAC_write_phy_reg(gmacdev->MacBase,gmacdev->PhyBase,0x1e,0xc);
+       synopGMAC_read_phy_reg(gmacdev->MacBase,gmacdev->PhyBase,0x1f,&data);
+       data = data & (~(1 << 12)) ;
+       err = synopGMAC_write_phy_reg(gmacdev->MacBase,gmacdev->PhyBase,0x1e,0xc);
+       err = synopGMAC_write_phy_reg(gmacdev->MacBase,gmacdev->PhyBase,0x1f,data);
+
+       if (err < 0)
+               return err;
+       return 0;
+}
 
 s32 synopGMAC_read_phy_reg(u64 RegBase,u32 PhyBase, u32 RegOffset, u16 * data );
 #if defined(LOONGSON_2G1A) || defined(LOONGSON_2F1A) || (defined(LOONGSON_3A2H) && defined(LOONGSON_3A8)) || defined(LOONGSON_2K) || defined(LS7A)
@@ -2052,9 +2074,11 @@ int init_phy(struct synopGMACdevice *gmacdev)
         } else{
             PRINTD("==== Warning: unrecoganized marvel gmac phy!\n");
         }
-    } else{
-        PRINTD("==== Warning: unrecoganized gmac phy!\n");
-    };
+    	}else if(data3 == 0x10a){
+              yt8511_config_init(gmacdev);
+    	}else{
+        	PRINTD("==== Warning: unrecoganized gmac phy!\n");
+    	};
 	return 0;
 #else
 	retval = rtl8211_config_init(gmacdev);
