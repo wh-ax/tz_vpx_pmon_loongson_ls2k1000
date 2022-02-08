@@ -26,6 +26,10 @@
 #include <dev/ata/atavar.h>
 #include <dev/ic/wdcvar.h>
 
+#define SATA_PHY_CFG0		0xbfe10450
+#define SATA_PHY_CFG1		0xbfe10454
+#define SATA_PHY_POWER		0x1fff
+
 #define SATA_HC_MAX_NUM		4	/* Max host controller numbers */
 #define SATA_HC_MAX_CMD		16	/* Max command queue depth per host controller */
 #define SATA_HC_MAX_PORT	16	/* Max port number per host controller */
@@ -406,4 +410,6 @@ extern void ahci_sata_strategy(struct buf *bp, struct ahci_sata_softc *priv);
 int ahci_kick_engine(struct ahci_sata_softc *sc, int force_restart);
 int cd_prepare(struct ahci_sata_softc *sc, int flag);
 int cd_test_unit_ready(struct ahci_sata_softc *sc);
+void sata_phy_reset(void);
+void sata_phy_power(void);
 #endif /* __8620_H__ */

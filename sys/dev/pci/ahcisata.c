@@ -536,7 +536,7 @@ static int waiting_for_cmd_completed(volatile u8 * offset,
 	u32 status;
 
 	for (i = 0; ((status = readl(offset)) & sign) && i < timeout_msec; i++)
-		;
+		msleep(2);
 
 	return (i < timeout_msec) ? 0 : -1;
 }
@@ -776,23 +776,52 @@ static int get_ahci_device_data(struct ahci_sata_softc *sc, u8 * fis, int fis_le
 	if((readl(port_mmio + PORT_CMD) & PORT_CMD_START) == 0){
         PRINTD("AHCI SATA error: CI is set when START is zero!\n");
     };
-	writel_with_flush(1, port_mmio + PORT_CMD_ISSUE);
-	if (waiting_for_cmd_completed(port_mmio + PORT_CMD_ISSUE, 2000000, 0x1)) {
-		PRINTD("%s <line%d>: timeout exit! %d bytes transferred.\n", __func__, __LINE__,
-		       pp->cmd_slot->status);
+#ifdef SATA_RESET
+	int count = 3;
+	while(count > 0)
+	{
+		writel_with_flush(1, port_mmio + PORT_CMD_ISSUE);
+		if (waiting_for_cmd_completed(port_mmio + PORT_CMD_ISSUE, 2000000, 0x1)) {
+			printf("%s <line%d>: timeout exit! %d bytes transferred.\n", __func__, __LINE__,
+					pp->cmd_slot->status);
+			sata_phy_power();
+			printf("PxIS: 0x%08x, PxSERR: 0x%08x\n", readl(port_mmio + PORT_IRQ_STAT), readl(port_mmio + PORT_SCR_ERR));
+			printf("PxTFD: 0x%08x, PxSSTS: 0x%08x\n", readl(port_mmio + PORT_TFDATA), readl(port_mmio + PORT_SCR_STAT));
 
-        PRINTD("PxIS: 0x%08x, PxSERR: 0x%08x\n", readl(port_mmio + PORT_IRQ_STAT), readl(port_mmio + PORT_SCR_ERR));
-        PRINTD("PxTFD: 0x%08x, PxSSTS: 0x%08x\n", readl(port_mmio + PORT_TFDATA), readl(port_mmio + PORT_SCR_STAT));
+			writel_with_flush(1, port_mmio + PORT_CMD_ISSUE);
+			if (waiting_for_cmd_completed(port_mmio + PORT_CMD_ISSUE, 2000000, 0x1)) {
+				printf("Waiting another 2s is useless.\n");
+			}else{
+				printf("Waiting another 2s is usefull.\n");
+			}
 
-	    if (waiting_for_cmd_completed(port_mmio + PORT_CMD_ISSUE, 2000000, 0x1)) {
-            PRINTD("Waiting another 2s is useless.\n");
-        }else{
-            PRINTD("Waiting another 2s is usefull.\n");
-        }
-
-		return -1;
+			sata_phy_power();
+			count--;
+			if(count > 0)
+				continue;
+			return -1;
+		}
+		else
+			break;
 	}
+#else
+		writel_with_flush(1, port_mmio + PORT_CMD_ISSUE);
+		if (waiting_for_cmd_completed(port_mmio + PORT_CMD_ISSUE, 2000000, 0x1)) {
+			PRINTD("%s <line%d>: timeout exit! %d bytes transferred.\n", __func__, __LINE__,
+					pp->cmd_slot->status);
 
+			PRINTD("PxIS: 0x%08x, PxSERR: 0x%08x\n", readl(port_mmio + PORT_IRQ_STAT), readl(port_mmio + PORT_SCR_ERR));
+			PRINTD("PxTFD: 0x%08x, PxSSTS: 0x%08x\n", readl(port_mmio + PORT_TFDATA), readl(port_mmio + PORT_SCR_STAT));
+
+			if (waiting_for_cmd_completed(port_mmio + PORT_CMD_ISSUE, 2000000, 0x1)) {
+				PRINTD("Waiting another 2s is useless.\n");
+			}else{
+				PRINTD("Waiting another 2s is usefull.\n");
+			}
+
+			return -1;
+		}
+#endif
 	ahci_debug("%d byte transferred.\n", pp->cmd_slot->status);
 
 	/* Indicates the current byte count that has transferred on device

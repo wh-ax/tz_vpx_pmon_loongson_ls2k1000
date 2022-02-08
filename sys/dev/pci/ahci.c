@@ -93,7 +93,6 @@ static void *ahci_init_one(u32 regbase);
 
 static int ahci_match(struct device *, void *, void *);
 static void ahci_attach(struct device *, struct device *, void *);
-
 static inline u32 ahci_port_base(u32 base, u32 port)
 {
 	return base + 0x100 + (port * 0x80);
@@ -116,6 +115,29 @@ struct cfdriver ahci_cd = {
 	NULL, "ahci", DV_DULL
 };
 
+void sata_phy_reset(void)
+{
+	unsigned int val;
+	val = readl(SATA_PHY_CFG0);
+	val &= ~(1 << 2);
+	writel(val,SATA_PHY_CFG0);
+	msleep(100);
+
+	val = readl(SATA_PHY_CFG0);
+	val |= (1 << 2);
+	writel(val,SATA_PHY_CFG0);
+	msleep(100);
+}
+
+void sata_phy_power(void)
+{
+	unsigned int val;
+	val = SATA_PHY_POWER;
+	writel((val | 0x80000000),SATA_PHY_CFG1);
+	msleep(100);
+	writel(val,SATA_PHY_CFG1);
+	msleep(100);
+}
 static int ahci_match(struct device *parent, void *match, void *aux)
 {
 	struct pci_attach_args *pa = aux;
@@ -166,6 +188,9 @@ static void ahci_attach(struct device *parent, struct device *self, void *aux)
 
 	if (!(probe_ent = ahci_init_one((u32) (memt->bus_base | (u32) (membasep))))) {
 		debug("ahci_init_one failed.\n");
+#ifdef SATA_RESET
+		return;
+#endif
 	}
 
 	linkmap = probe_ent->link_port_map;
@@ -374,7 +399,11 @@ int ahci_host_init(struct ahci_probe_ent *probe_ent)
 		ret = ahci_link_up(probe_ent, i);
 		if (ret) {
 			debug("SATA link %d timeout.\n", i);
+#ifdef SATA_RESET
+			return 1;
+#else
 			continue;
+#endif
 		} else {
 			debug("SATA link ok.\n");
 		}
@@ -509,8 +538,23 @@ static void *ahci_init_one(u32 regbase)
 	/* initialize adapter */
 	rc = ahci_host_init(probe_ent);
 	if (rc)
+	{
+#ifdef SATA_RESET
+		sata_phy_power();
+		sata_phy_reset();
+		rc = ahci_host_init(probe_ent);
+		if (rc)
+		{
+			sata_phy_power();
+			sata_phy_reset();
+			rc = ahci_host_init(probe_ent);
+			if (rc)
+			goto err_out;
+		}
+#else
 		goto err_out;
-
+#endif
+	}
 	ahci_print_info(probe_ent);
 
 	return probe_ent;

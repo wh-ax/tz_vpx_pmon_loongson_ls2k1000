@@ -908,6 +908,36 @@ cp0_main:
 	sw t2,0x14(t1)
 2:
 
+#ifdef SATA_RESET
+	li      t0, 0xbfe10000
+	//power down phy
+	lw      t1, 0x454(t0)
+	li      t2, (1 << 31)
+	or      t1, t1, t2
+	sw      t1, 0x454(t0)
+
+	//delay a while
+	li      t1, 0x1000
+	1:
+	subu    t1, t1, 1
+	bnez    t1, 1b
+	nop
+
+	li      t0, 0xbfe10000
+	//power up phy
+	lw      t1, 0x454(t0)
+	li      t2, (1 << 31)
+	not     t2, t2
+	and     t1, t1, t2
+	sw      t1, 0x454(t0)
+
+	//delay a while
+	li      t1, 0x10000
+	1:
+	subu    t1, t1, 1
+	bnez    t1, 1b
+	nop
+#endif
 #if 1 /* Config SATA : use internel clock */
 	li	    t0, 0xbfe10000
 
@@ -943,78 +973,43 @@ cp0_main:
 	nop
 #endif
 
-#if 0
-    li      t0, 0xbfe10000
-
-    //assert p0 reset
-    lw      t1, 0x450(t0)
-    li      t2, (1 << 3)
-    not     t2, t2
-    and     t1, t1, t2
-    sw      t1, 0x450(t0)
-
-    //assert phy reset
-    lw      t1, 0x450(t0)
-    li      t2, (1 << 2)
-    not     t2, t2
-    and     t1, t1, t2
-    sw      t1, 0x450(t0)
-
-    //power down phy
-    lw      t1, 0x454(t0)
-    li      t2, (1 << 31)
-    or      t1, t1, t2
-    sw      t1, 0x454(t0)
-
-    //switch refclk
-    lw      t1, 0x450(t0)
-    li      t2, (1 << 1)
-    not     t2, t2
-    and     t1, t1, t2
-    sw      t1, 0x450(t0)
-
-    //delay a while
-    li      t1, 0x1000
-1:
-    subu    t1, t1, 1
-    bnez    t1, 1b
-    nop
-
-
-    //power up phy
-    lw      t1, 0x454(t0)
-    li      t2, (1 << 31)
-    not     t2, t2
-    and     t1, t1, t2
-    sw      t1, 0x454(t0)
-
-    //deassert phy reset
-    lw      t1, 0x450(t0)
-    li      t2, (1 << 2)
-    or      t1, t1, t2
-    sw      t1, 0x450(t0)
-	
-    //deassert p0 reset
-    lw      t1, 0x450(t0)
-    li      t2, (1 << 3)
-    or      t1, t1, t2
-    sw      t1, 0x450(t0)
-
-    //delay a while
-    li      t1, 0x10000
-1:
-    subu    t1, t1, 1
-    bnez    t1, 1b
-    nop
-#endif
 #endif
 
-#if 0 /* Config SATA TX signal*/
+#ifdef SATA_RESET
+	/* Config SATA TX signal*/
         li      t0, 0xbfe10458
         dli     t1, 0x1403f1002
         sd      t1, 0x0(t0)
-#endif
 
+	li      t0, 0xbfe10000
+	//power down phy
+	lw      t1, 0x454(t0)
+	li      t2, (1 << 31)
+	or      t1, t1, t2
+	sw      t1, 0x454(t0)
+
+	//delay a while
+	li      t1, 0x1000
+	1:
+	subu    t1, t1, 1
+	bnez    t1, 1b
+	nop
+
+	li      t0, 0xbfe10000
+	//power up phy
+	lw      t1, 0x454(t0)
+	li      t2, (1 << 31)
+	not     t2, t2
+	and     t1, t1, t2
+	sw      t1, 0x454(t0)
+
+	//delay a while
+	li      t1, 0x10000
+	1:
+	subu    t1, t1, 1
+	bnez    t1, 1b
+	nop
+#endif
 
 #if 1 // Fix the Gmac0  multi-func to enable Gmac1
 	li	t0, 0xbfe13800
