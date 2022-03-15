@@ -25,13 +25,30 @@
 #define ee_outb(reg, val)	outb(LS2K_I2C0_REG_BASE + reg, val)
 #define ee_inb(reg)		inb(LS2K_I2C0_REG_BASE + reg)
 
+static void i2c_tip(void)
+{
+	int i = 1000;
+
+	for(i;i>0;i--){
+		if(!(ee_inb(SR_REG) & SR_TIP));
+		break;
+	}
+	if(!i)
+		printf("i2c send data err!!!\n");
+}
+
 static void ls2k_i2c_stop(void)
 {
-again:
-	ee_outb(CR_REG, CR_STOP);
-	ee_inb(SR_REG);
-	while (ee_inb(SR_REG) & SR_BUSY)
-		goto again; 
+	int i = 1000;
+
+	for(i;i>0;i--){
+		ee_outb(CR_REG, CR_STOP);
+		ee_inb(SR_REG);
+		if(!(ee_inb(SR_REG) & SR_BUSY));
+		break;
+	}
+	if(!i)
+		printf("i2c stop failded!!!\n");
 }
 
 void i2c_init(void)
@@ -47,10 +64,10 @@ static int i2c_tx_byte(unsigned char data, unsigned char opt)
 {
 	ee_outb(TXR_REG, data);
 	ee_outb(CR_REG, opt);
-	while (ee_inb(SR_REG) & SR_TIP) ;
+	i2c_tip();
 
 	if (ee_inb(SR_REG) & SR_NOACK) {
-		printf("Eeprom has no ack, Pls check the hardware!");
+		printf("Eeprom has no ack, Pls check the hardware!\n");
 		ls2k_i2c_stop();
 		return -1;
 	}
@@ -135,7 +152,7 @@ int ls2k_eeprom_read_cur(unsigned char *buf)
 		return 0;
 
 	ee_outb(CR_REG, CR_READ);
-	while (ee_inb(SR_REG) & SR_TIP) ;
+	i2c_tip();
 
 	*buf = ee_inb(RXR_REG);
 	ls2k_i2c_stop();
@@ -186,7 +203,7 @@ static int i2c_read_seq_cur(unsigned char *buf, int count)
 	for (i = 0; i < count; i++) {
 		ee_outb(CR_REG, ((i == count - 1) ? 
 					(CR_READ | CR_ACK) : CR_READ));
-		while (ee_inb(SR_REG) & SR_TIP) ;
+		i2c_tip();
 		buf[i] = ee_inb(RXR_REG);
 	}
 

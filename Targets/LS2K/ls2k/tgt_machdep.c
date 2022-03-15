@@ -292,6 +292,7 @@ static void init_pcidev(unsigned int str_sum)
 	*(volatile unsigned int *)0xbfe10428 &= ~(1<<19); /*disable usb prefetch*/
 	val = *(unsigned int *)0xbfe10420;
 	*(unsigned int *)0xbfe10420 = (val | 0xc000);//mtf, enable I2C1
+	*(unsigned int *)0xbfe10080 = 0x1fc00082;
 	_pci_devinit(1);	/* PCI device initialization */
 	if(str_sum > 0){
 #if (NMOD_X86EMU_INT10 > 0)||(NMOD_X86EMU >0)
