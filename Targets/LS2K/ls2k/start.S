@@ -562,6 +562,12 @@ cp0_main:
         bnez    t0, wait_for_smp
         nop
 
+#ifdef NO_SMP 
+	/*Close core 1*/
+	li	t0, 0xbfe104d0
+	li	t1, 0x1
+	sw	t1, 0x4(t0)
+#endif
 	bal	beep_on
 	nop
 	li	a0, 0x8000
@@ -1364,7 +1370,11 @@ wait_for_smp:
 	mtc0	t1, CP0_CONFIG
 	la	t1, 1f
 	addu	t1, s0
+#ifdef NO_SMP 
+	li	v0, 0xffffffff
+#else
 	li	v0, 0x9fffffff
+#endif
 	and	t1, v0
 	jr	t1
 	nop

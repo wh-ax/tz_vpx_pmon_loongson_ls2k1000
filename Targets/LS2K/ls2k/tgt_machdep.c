@@ -212,8 +212,10 @@ void initmips(unsigned long long  raw_memsz)
 	unsigned int hi;
 	unsigned long long memsz;
 	unsigned short i;
+#ifndef NO_SMP 
 	//core1 run wait_for_smp_call function in ram
 	asm volatile(".set mips64;sd %1,(%0);.set mips0;"::"r"(0xbfe11120),"r"(&wait_for_smp_call));
+#endif
 	tgt_fpuenable();
 
 	get_memorysize(raw_memsz);

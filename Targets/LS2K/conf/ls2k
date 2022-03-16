@@ -288,3 +288,4 @@ option HPET_RTC
 
 #option INIT_TIME
 #option SATA_RESET
+#option NO_SMP
