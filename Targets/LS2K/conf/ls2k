@@ -290,3 +290,4 @@ option HPET_RTC
 #option SATA_RESET
 #option NO_SMP
 #option	WR_FILTER0
+#option FIX_PCIE_GEN1

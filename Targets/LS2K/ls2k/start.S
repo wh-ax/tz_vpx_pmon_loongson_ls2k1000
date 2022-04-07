@@ -631,7 +631,11 @@ cp0_main:
 	li	t1, 0xfff9ffff
         lw      t2, 0x0(t0)
         and     t1, t1, t2
+#ifdef FIX_PCIE_GEN1
+	or	t1, 0x00000
+#else
 	or	t1, 0x20000
+#endif
 	sw	t1, 0x0(t0)
 
 	dli	t0, 0x900000fe0700681c
@@ -650,6 +654,11 @@ cp0_main:
 	or	t1, t1, t2
 	sw	t1, 0x78(t0)
 
+#ifdef FIX_PCIE_GEN1
+	li	t1, 0x03
+	sw	t1, 0x80(t0)
+#endif
+
 	li	t1, 0x10000000
 	sw	t1, 0x10(t0)
 
@@ -667,7 +676,11 @@ cp0_main:
     and t2, t2, t1
     sw  t2, 0x58(t0)
 
+#ifdef FIX_PCIE_GEN1
+	dli	t1, 0xff104f
+#else
 	dli	t1, 0xff204f
+#endif
         sw      t1, 0x0(t0)
   
 //pcie1 port1
@@ -675,7 +688,11 @@ cp0_main:
 	li	t1, 0xfff9ffff
         lw      t2, 0x0(t0)
         and     t1, t1, t2
+#ifdef FIX_PCIE_GEN1
+	or	t1, 0x00000
+#else
 	or	t1, 0x20000
+#endif
 	sw	t1, 0x0(t0)
 
 	dli	t0, 0x900000fe0700701c
@@ -692,6 +709,11 @@ cp0_main:
 	li	t2, 0x1000
 	or	t1, t1, t2
 	sw	t1, 0x78(t0)
+
+#ifdef FIX_PCIE_GEN1
+	li	t1, 0x03
+	sw	t1, 0x80(t0)
+#endif
 
 	li	t1, 0x10100000
 	sw	t1, 0x10(t0)
@@ -710,7 +732,11 @@ cp0_main:
     and t2, t2, t1
     sw  t2, 0x58(t0)
 
-	dli	t1, 0xff204c
+#ifdef FIX_PCIE_GEN1
+	dli	t1, 0xff104f
+#else
+	dli	t1, 0xff204f
+#endif
         sw      t1, 0x0(t0)
   
 //pcie0 port0
@@ -718,7 +744,11 @@ cp0_main:
 	li	t1, 0xfff9ffff
         lw      t2, 0x0(t0)
         and     t1, t1, t2
+#ifdef FIX_PCIE_GEN1
+	or	t1, 0x00000
+#else
 	or	t1, 0x20000
+#endif
 	sw	t1, 0x0(t0)
 
 	dli	t0, 0x900000fe0700481c
@@ -735,6 +765,11 @@ cp0_main:
 	li	t2, 0x1000
 	or	t1, t1, t2
 	sw	t1, 0x78(t0)
+
+#ifdef FIX_PCIE_GEN1
+	li	t1, 0x03
+	sw	t1, 0x80(t0)
+#endif
 
 	li	t1, 0x11000000
 	sw	t1, 0x10(t0)
@@ -753,7 +788,11 @@ cp0_main:
     and t2, t2, t1
     sw  t2, 0x58(t0)
 
-	dli	t1, 0xff204c
+#ifdef FIX_PCIE_GEN1
+	dli	t1, 0xff104f
+#else
+	dli	t1, 0xff204f
+#endif
         sw      t1, 0x0(t0)
   
 //pcie0 port1
@@ -761,7 +800,11 @@ cp0_main:
 	li	t1, 0xfff9ffff
         lw      t2, 0x0(t0)
         and     t1, t1, t2
+#ifdef FIX_PCIE_GEN1
+	or	t1, 0x00000
+#else
 	or	t1, 0x20000
+#endif
 	sw	t1, 0x0(t0)
 
 	dli	t0, 0x900000fe0700501c
@@ -778,6 +821,11 @@ cp0_main:
 	li	t2, 0x1000
 	or	t1, t1, t2
 	sw	t1, 0x78(t0)
+
+#ifdef FIX_PCIE_GEN1
+	li	t1, 0x03
+	sw	t1, 0x80(t0)
+#endif
 
 	li	t1, 0x11100000
 	sw	t1, 0x10(t0)
@@ -796,7 +844,11 @@ cp0_main:
     and t2, t2, t1
     sw  t2, 0x58(t0)
 
-	dli	t1, 0xff204c
+#ifdef FIX_PCIE_GEN1
+	dli	t1, 0xff104f
+#else
+	dli	t1, 0xff204f
+#endif
         sw      t1, 0x0(t0)
   
 //pcie0 port2
@@ -804,7 +856,11 @@ cp0_main:
 	li	t1, 0xfff9ffff
         lw      t2, 0x0(t0)
         and     t1, t1, t2
+#ifdef FIX_PCIE_GEN1
+	or	t1, 0x00000
+#else
 	or	t1, 0x20000
+#endif
 	sw	t1, 0x0(t0)
 
 	dli	t0, 0x900000fe00005800
@@ -815,6 +871,11 @@ cp0_main:
 	li	t2, 0x1000
 	or	t1, t1, t2
 	sw	t1, 0x78(t0)
+
+#ifdef FIX_PCIE_GEN1
+	li	t1, 0x03
+	sw	t1, 0x80(t0)
+#endif
 
 	li	t1, 0x11200000
 	sw	t1, 0x10(t0)
@@ -833,7 +894,11 @@ cp0_main:
     and t2, t2, t1
     sw  t2, 0x58(t0)
 
-	dli	t1, 0xff204c
+#ifdef FIX_PCIE_GEN1
+	dli	t1, 0xff104f
+#else
+	dli	t1, 0xff204f
+#endif
         sw      t1, 0x0(t0)
   
 //pcie0 port3
@@ -841,7 +906,11 @@ cp0_main:
 	li	t1, 0xfff9ffff
         lw      t2, 0x0(t0)
         and     t1, t1, t2
+#ifdef FIX_PCIE_GEN1
+	or	t1, 0x00000
+#else
 	or	t1, 0x20000
+#endif
 	sw	t1, 0x0(t0)
 
 	dli	t0, 0x900000fe00006000
@@ -852,6 +921,11 @@ cp0_main:
 	li	t2, 0x1000
 	or	t1, t1, t2
 	sw	t1, 0x78(t0)
+
+#ifdef FIX_PCIE_GEN1
+	li	t1, 0x03
+	sw	t1, 0x80(t0)
+#endif
 
 	li	t1, 0x11300000
 	sw	t1, 0x10(t0)
@@ -870,7 +944,11 @@ cp0_main:
     and t2, t2, t1
     sw  t2, 0x58(t0)
 
-	dli	t1, 0xff204c
+#ifdef FIX_PCIE_GEN1
+	dli	t1, 0xff104f
+#else
+	dli	t1, 0xff204f
+#endif
         sw      t1, 0x0(t0)
 
 	bal	initserial
