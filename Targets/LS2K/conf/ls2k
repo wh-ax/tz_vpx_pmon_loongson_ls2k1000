@@ -291,3 +291,4 @@ option HPET_RTC
 #option NO_SMP
 #option	WR_FILTER0
 #option FIX_PCIE_GEN1
+#option FIX_PCIE_LINK

@@ -593,11 +593,19 @@ cp0_main:
 	sw	t1, 0x580(t0)
 	sw	t1, 0x5a0(t0)
 
+#ifdef FIX_PCIE_LINK
+	li	t1, 0x873ff0a8
+#else
 	li	t1, 0xff3ff0a8
+#endif
 	sw	t1, 0x584(t0)
 	sw	t1, 0x5a4(t0)
 
+#ifdef FIX_PCIE_LINK
+	li	t1, 0x24210
+#else
 	li	t1, 0x27fff
+#endif
 	sw	t1, 0x588(t0)
 	sw	t1, 0x5a8(t0)
 
@@ -930,7 +938,7 @@ cp0_main:
 	li	t1, 0x11300000
 	sw	t1, 0x10(t0)
 
-	dli	t0, 0x9000000000000000
+	fdli	t0, 0x9000000000000000
 	li      t1, 0x11300000
 	or	t0, t0, t1
 
