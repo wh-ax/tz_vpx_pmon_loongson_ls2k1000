@@ -276,7 +276,12 @@ option		OUTPUT_TO_BOTH
 option		KBD_CHECK_FAST
 option		TEST_USB_HOST
 option		CONFIG_SLOW_PCI_FOR_BROKENDEV
-option 		CONFIG_VIDEO_SW_CURSOR
+#### Horizontal display
+#option 	CONFIG_VIDEO_SW_CURSOR
+#select		horizontal_display
+#### Vertical display
+option      	CONFIG_CONSOLE_CURSOR
+select		vertical_display
 #option		CONFIG_USB_HOTPLUG
 
 select		http

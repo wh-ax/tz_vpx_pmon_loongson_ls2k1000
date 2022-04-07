@@ -327,13 +327,21 @@ static int show_main(int flag, const char* path)
 			not_delay = TRUE;
 			if (strchr("\r\n", ch) != NULL)
 			{
+#ifdef CONFIG_CONSOLE_CURSOR
+				__set_cursor(0,1);
+#else
 				__set_cursor(0,0);
+#endif
 				break;
 			}
             else if (99 == ch)//'c' pressed ,back to console
             {
 				__scr_clear();
+#ifdef CONFIG_CONSOLE_CURSOR
+				__set_cursor(0,1);
+#else
 				__set_cursor(0,0);
+#endif
                 return 0;
             }			
 			else		if ( ch  == PREV) //UP key pressed
@@ -378,7 +386,11 @@ static int show_main(int flag, const char* path)
 	}
 JUST_BOOT:
 	__scr_clear();
+#ifdef CONFIG_CONSOLE_CURSOR
+	__set_cursor(0,1);
+#else
 	__set_cursor(0,0);
+#endif
 	do_cmd_boot_load(selected_menu_num - 1, 0);
 	//printf ("The selected kernel entry is wrong, try default entry from al.\n ");
 	return 1;
