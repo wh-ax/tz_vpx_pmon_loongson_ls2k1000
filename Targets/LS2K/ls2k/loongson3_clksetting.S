@@ -73,8 +73,6 @@ ATTENTION:
 
 #define HT_HSEL			(0x1 << 15)
 
-	TTYDBG ("Soft CLK SEL adjust begin\r\n")
-
 	li     	t0, 0xbfe10480
 	li	t1, (0x1 << 19) 	//power down pll L1 first
 	sd	t1, 0x0(t0)
@@ -95,11 +93,6 @@ ATTENTION:
 	ld      a0, 0x0(t0)
 	ori     a0, a0, PLL_CHANG_COMMIT
 	sd      a0, 0x0(t0)
-
-	bal     hexserial
-	nop
-
-	TTYDBG ("\r\nMEM        :")
 
 	li      t0, 0xbfe10490
 	li	t1, (0x1 << 19) 	//power down pll  first
@@ -122,11 +115,6 @@ ATTENTION:
 	ori     a0, a0, 0x3
 	sw      a0, 0x0(t0)
 
-	bal     hexserial
-	nop
-
-	TTYDBG ("\r\nDC        :")
-
 	li      t0, 0xbfe104a0
 	li	t1, (0x1 << 19) 	//power down pll  first
 	sd	t1, 0x0(t0)
@@ -147,11 +135,6 @@ ATTENTION:
 	lw      a0, 0x0(t0)
 	ori     a0, a0, 0x3
 	sw      a0, 0x0(t0)
-
-	bal     hexserial
-	nop
-
-	TTYDBG ("\r\nPIX0        :")
 
 	li      t0, 0xbfe104b0		//pll_pix0
 	li	t1, (0x1 << 19) 	//power down pll  first
@@ -174,11 +157,6 @@ ATTENTION:
 	ori     a0, a0, 0x1
 	sw      a0, 0x0(t0)
 
-	bal     hexserial
-	nop
-
-	TTYDBG ("\r\nPIX1        :")
-
 	li      t0, 0xbfe104c0		//pll_pix1
 	li	t1, (0x1 << 19) 	//power down pll  first
 	sd	t1, 0x0(t0)
@@ -199,9 +177,5 @@ ATTENTION:
 	lw      a0, 0x0(t0)
 	ori     a0, a0, 0x1
 	sw      a0, 0x0(t0)
-
-	bal     hexserial
-	nop
-
 
 #endif

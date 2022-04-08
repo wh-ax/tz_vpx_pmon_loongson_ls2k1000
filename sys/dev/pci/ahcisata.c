@@ -536,7 +536,7 @@ static int waiting_for_cmd_completed(volatile u8 * offset,
 	u32 status;
 
 	for (i = 0; ((status = readl(offset)) & sign) && i < timeout_msec; i++)
-		msleep(2);
+		;
 
 	return (i < timeout_msec) ? 0 : -1;
 }
