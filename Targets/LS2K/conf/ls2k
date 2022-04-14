@@ -297,3 +297,4 @@ option HPET_RTC
 #option	WR_FILTER0
 #option FIX_PCIE_GEN1
 #option FIX_PCIE_LINK
+#option CONFIG_DDR_32BIT

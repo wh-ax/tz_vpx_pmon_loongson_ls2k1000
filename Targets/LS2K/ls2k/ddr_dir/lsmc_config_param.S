@@ -806,6 +806,7 @@ x8:
 1:
 #endif
 #endif
+#ifndef CONFIG_DDR_32BIT
     //set data bus width
     ld      a2, DATA_WIDTH_32_ADDR(t8)
     dli     a1, 0x1
@@ -841,6 +842,7 @@ x8:
     dsll    a1, a1, ADDR_WIN_DATA_WIDTH_OFFSET
     or      a2, a2, a1
     sd      a2, ADDR_WIN_DATA_WIDTH_ADDR(t8)
+#endif
 #endif
     //disable ECC module here for leveling, ECC will be enabled later
     ld      a2, ECC_ENABLE_ADDR(t8)

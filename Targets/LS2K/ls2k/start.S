@@ -1207,7 +1207,10 @@ start_now:
 //#define DEBUG_DDR_PARAM
 //#define PRINT_DDR_LEVELING
 //#define DLL_DELAY_LOOP
-//#define NO_AUTO_TRFC   //adjust TRFC param manually if defined
+#ifdef CONFIG_DDR_32BIT
+#define NO_AUTO_TRFC   //adjust TRFC param manually if defined
+#define DISABLE_HARD_LEVELING
+#endif
     TTYDBG("\r\nStart Init Memory, wait a while......\r\n")
 ####################################
     move    msize, $0
