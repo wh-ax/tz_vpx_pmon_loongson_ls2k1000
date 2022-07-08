@@ -298,3 +298,4 @@ option HPET_RTC
 #option FIX_PCIE_GEN1
 #option FIX_PCIE_LINK
 #option CONFIG_DDR_32BIT
+#option FORCE_PCIE_PHY_DETECT

@@ -616,6 +616,12 @@ cp0_main:
         dli     t1, 0x14fff1002
         sd      t1, 0x0(t0)
         sd      t1, 0x20(t0)
+#ifdef FORCE_PCIE_PHY_DETECT
+/*force phy dectect*/
+        dli     t1, 0x101081010
+        sd      t1, 0x0(t0)
+        sd      t1, 0x20(t0)
+#endif
 
         dli     t1, 0x14fff1102
         sd      t1, 0x0(t0)
