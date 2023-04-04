@@ -44,6 +44,7 @@ unsigned int mem_size = 0;
 #define TPRINTD(...)            tgt_printf(__VA_ARGS__)
 #endif
 
+
 void tgt_putchar(int);
 int tgt_printf(const char *fmt, ...)
 {
@@ -252,7 +253,7 @@ void initmips(unsigned long long  raw_memsz)
 			MipsExceptionEnd - MipsException);
 	SBD_DISPLAY("BEV0", 0);
 	PRINTD("BEV in SR set to zero.\n");
-	ls2k_nand_init();
+	//ls2k_nand_init();
 #ifdef DTB
 	verify_dtb();
 #endif
@@ -672,6 +673,8 @@ static void init_legacy_rtc(void)
 }
 
 #ifdef EXTERNAL_RTC
+static unsigned int bcd2bin(unsigned char n);
+static unsigned int bin2bcd (unsigned int n);
 extern int rtc_get_time(unsigned char *);
 extern int rtc_set_time(unsigned char *);
 extern int rtc_get_sec(void);
@@ -896,6 +899,16 @@ we feed dog if wdt_en, because another core may feed dog when we set RST_CNT/0x1
 #else
 #define RTS_CNT_OFFSET 0x100
 #endif
+static unsigned int bcd2bin(unsigned char n)
+{
+        return ((((n >> 4) & 0x0F) * 10) + (n & 0x0F));
+}
+
+static unsigned int bin2bcd (unsigned int n)
+{
+        return (((n / 10) << 4) | (n % 10));
+}
+
 static time_t ls2k_rtc_gettime()
 {
 	struct tm tm;
@@ -934,7 +947,8 @@ time_t tgt_gettime()
 	t = rtc_get_time(buf);
 
 	if (t) {
-		tm.tm_sec = buf[0];
+        //printf("---real time ---\n");
+		/*tm.tm_sec = buf[0];
 		tm.tm_min = buf[1];
 		tm.tm_hour = buf[2];
 		tm.tm_mday = buf[4];
@@ -943,6 +957,15 @@ time_t tgt_gettime()
 		if (tm.tm_year < 50)
 			tm.tm_year += 100;
 		tm.tm_isdst = tm.tm_gmtoff = 0;
+		t = gmmktime(&tm);*/
+        tm.tm_sec  = bcd2bin(buf[0]);
+        tm.tm_min  = bcd2bin(buf[1]);
+        tm.tm_hour = bcd2bin(buf[2]);
+        tm.tm_mday = bcd2bin(buf[3]);
+        tm.tm_wday = bcd2bin(buf[4]);
+        tm.tm_mon  = bcd2bin(buf[5]);
+        tm.tm_year = bcd2bin(buf[6]) + 100;
+		//tm.tm_isdst = tm.tm_gmtoff = 0;
 		t = gmmktime(&tm);
 	} else
 #elif defined(INTERNAL_RTC)
@@ -954,6 +977,7 @@ time_t tgt_gettime()
 #endif
 #endif
 	{
+        printf("---------default time------------\n");
 		t = 957960000;	/* Wed May 10 14:00:00 2000 :-) */
 	}
 	return (t);
@@ -970,14 +994,31 @@ void tgt_settime(time_t t)
 #ifdef EXTERNAL_RTC
 	unsigned char buf[7] = {0};
 	tm = gmtime(&t);
-	buf[0] = tm->tm_sec;
+	/*buf[0] = tm->tm_sec;
 	buf[1] = tm->tm_min;
 	buf[2] = tm->tm_hour;
 	buf[4] = tm->tm_mday;
 	buf[5] = (tm->tm_mon + 1);
 	 if(tm->tm_year > 100)
 		 tm->tm_year -=100;
-	buf[6] = tm->tm_year;
+	buf[6] = tm->tm_year;*/
+
+    //buf[0] = EM3027_REG_WATCH_SEC;
+   /* printf("tm.tm_sec = %d \n",tm->tm_sec);
+    printf("tm.tm_min = %d \n",tm->tm_min);
+    printf("tm.tm_hour = %d \n",tm->tm_hour);
+    printf("tm.tm_mday = %d \n",tm->tm_mday);
+    printf("tm.tm_wday = %d \n",tm->tm_wday);
+    printf("tm.tm_mon = %d \n",tm->tm_mon);
+    printf("tm.tm_year = %d \n",tm->tm_year);
+*/
+    buf[0] = bin2bcd(tm->tm_sec);
+    buf[1] = bin2bcd(tm->tm_min);
+    buf[2] = bin2bcd(tm->tm_hour);
+    buf[3] = bin2bcd(tm->tm_mday);
+    buf[4] = bin2bcd(tm->tm_wday);
+    buf[5] = bin2bcd(tm->tm_mon);
+    buf[6] = bin2bcd(tm->tm_year % 100);
 
 	rtc_set_time(buf);
 #elif defined(INTERNAL_RTC)

@@ -259,10 +259,10 @@
 			interrupts = <30>;
 			#address-cells = <1>;
 			#size-cells = <0>;
-			rtc@68{
+			/*rtc@68{
 				compatible = "dallas,ds1338";
 				reg = <0x68>;
-			};
+			};*/
 			eeprom@57{
 				compatible = "atmel,24c16";
 				reg = <0x57>;
@@ -277,10 +277,16 @@
 			reg = <0x1fe01800 0x8>;
 			interrupt-parent = <&icu>;
 			interrupts = <31>;
-			codec@1a{
+			/*codec@1a{
 				compatible = "codec_uda1342";
 				reg = <0x1a>;
-			};
+			};*/
+            rtc@51{
+                    compatible = "em3027";
+                    reg = <0x51>;
+                    interrupt-parent = <&icu>;
+			        interrupts = <70>;
+                    };
 
 		};
 
@@ -325,12 +331,12 @@
 				reg = <0>;
 			};
 		};
-		rtc0: rtc@1fe07800{
+		/*rtc0: rtc@1fe07800{
 			compatible = "loongson,ls-rtc";
 			reg = <0x1fe07800 0x100>;
 			interrupt-parent = <&icu>;
 			interrupts = <60>;
-		};
+		};*/
 
 		/* CAN controller nodes:
 		 * If you want to use the "can" function,enable the "can"
@@ -422,8 +428,7 @@
 			dma-channels = <1>;
 			dma-requests = <1>;
 		};
-		/*
-		dma4: dma@1fe10c40 {
+		/*dma4: dma@1fe10c40 {
 			compatible = "loongson,ls-apbdma-4";
 			apbdma-sel = <&apbdma 0x0 0x0>;
 			reg = <0x1fe10c40 0x8>;
@@ -431,7 +436,6 @@
 			dma-channels = <1>;
 			dma-requests = <1>;
 		};
-		*/
 		sdio@0x1fe0c000 {
 			#address-cells = <1>;
 			#size-cells = <1>;
@@ -445,7 +449,7 @@
 			dmas = <&dma1 1>;
 			dma-names = "sdio_rw";
 			dma-mask = <0xffffffff 0xffffffff>;
-		};
+		};*/
 		i2s: i2s@0x1fe0d000 {
 			compatible = "loongson,ls-i2s";
 			reg = <0x1fe0d000 0x10>;
@@ -467,7 +471,7 @@
 			loongson,i2s-controller = <&i2s>;
 			loongson,audio-codec = <&audio>;
 		};
-		nand@0x1fe06040{
+		/*nand@0x1fe06040{
 			#address-cells = <1>;
 			#size-cells = <1>;
 			compatible = "loongson,ls-nand";
@@ -492,7 +496,7 @@
 				label = "os_partition";
 				reg = <0x01400000 0x0>;
 			};
-		};
+		};*/
 		hwmon@0x1fe07000{
 			#address-cells = <1>;
 			#size-cells = <1>;

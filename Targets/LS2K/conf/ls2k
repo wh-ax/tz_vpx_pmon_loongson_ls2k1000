@@ -48,7 +48,7 @@ option      DDR3_DIMM
 #option		DDR3_SMT    #for SMT x16 SDRAM 4 chip 2GB
 #>>>>>>>>>>>>>>
 
-option		AUTO_DDR_CONFIG		# for DIMM recognize
+#option		AUTO_DDR_CONFIG		# for DIMM recognize
 option      LOONGSON_GMAC
 
 select		mod_flash_amd		# AMD flash device programming
@@ -135,8 +135,8 @@ option		NOSNOOP			# Caches are no-snooping
 # HAVE options. What tgt level provide
 #
 option		HAVE_TOD		# Time-Of-Day clock
-option		INTERNAL_RTC		# chip internal RTC
-#option		EXTERNAL_RTC		# external RTC
+#option		INTERNAL_RTC		# chip internal RTC
+option		EXTERNAL_RTC		# external RTC
 option		HAVE_NVENV		#  Platform has non-volatile env mem
 option		HAVE_LOGO		# Output splash logo
 option		USE_SUPERIO_UART
@@ -291,7 +291,7 @@ select		nand
 select cmd_xyzmodem
 option HPET_RTC
 
-#option INIT_TIME
+option INIT_TIME
 #option SATA_RESET
 #option NO_SMP
 #option	WR_FILTER0

@@ -1228,7 +1228,8 @@ start_now:
     dli     s1, 0xff100004  //set use MC1 or MC0 or MC1/0 and give All device id
 #else
 	//dli     s1, 0xc2e30400c2e30404
-	dli     s1, 0xc1a10404
+	//dli     s1, 0xc1a10404
+	dli     s1, 0xc0a18804
 #endif
 #include "ddr_dir/loongson3_ddr2_config.S"
 
