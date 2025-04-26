@@ -61,366 +61,363 @@ ${OBJDIR}/lib${LIB}.a: ${OBJS}
 
 # DO NOT DELETE
 
-w_acos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-w_acos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-w_acos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-w_acos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-w_acos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-w_acos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-w_acos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-w_acos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-w_acos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-w_asin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-w_asin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-w_asin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-w_asin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-w_asin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-w_asin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-w_asin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-w_asin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-w_asin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-s_atan.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-s_atan.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-s_atan.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-s_atan.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-s_atan.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-s_atan.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-s_atan.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-s_atan.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-s_atan.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-w_atan2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-w_atan2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-w_atan2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-w_atan2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-w_atan2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-w_atan2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-w_atan2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-w_atan2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-w_atan2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-s_ceil.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-s_ceil.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-s_ceil.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-s_ceil.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-s_ceil.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-s_ceil.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-s_ceil.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-s_ceil.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-s_ceil.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-s_cos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-s_cos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-s_cos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-s_cos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-s_cos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-s_cos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-s_cos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-s_cos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-s_cos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-w_cosh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-w_cosh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-w_cosh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-w_cosh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-w_cosh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-w_cosh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-w_cosh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-w_cosh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-w_cosh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-w_exp.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-w_exp.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-w_exp.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-w_exp.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-w_exp.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-w_exp.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-w_exp.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-w_exp.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-w_exp.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-s_expm1.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-s_expm1.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-s_expm1.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-s_expm1.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-s_expm1.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-s_expm1.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-s_expm1.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-s_expm1.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-s_expm1.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-s_fabs.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-s_fabs.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-s_fabs.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-s_fabs.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-s_fabs.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-s_fabs.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-s_fabs.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-s_fabs.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-s_fabs.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-s_floor.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-s_floor.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-s_floor.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-s_floor.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-s_floor.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-s_floor.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-s_floor.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-s_floor.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-s_floor.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-w_fmod.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-w_fmod.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-w_fmod.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-w_fmod.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-w_fmod.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-w_fmod.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-w_fmod.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-w_fmod.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-w_fmod.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-s_frexp.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-s_frexp.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-s_frexp.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-s_frexp.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-s_frexp.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-s_frexp.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-s_frexp.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-s_frexp.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-s_frexp.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-w_log.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-w_log.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-w_log.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-w_log.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-w_log.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-w_log.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-w_log.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-w_log.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-w_log.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-w_log10.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-w_log10.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-w_log10.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-w_log10.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-w_log10.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-w_log10.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-w_log10.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-w_log10.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-w_log10.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-s_modf.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-s_modf.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-s_modf.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-s_modf.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-s_modf.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-s_modf.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-s_modf.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-s_modf.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-s_modf.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-w_pow.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-w_pow.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-w_pow.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-w_pow.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-w_pow.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-w_pow.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-w_pow.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-w_pow.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-w_pow.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-s_sin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-s_sin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-s_sin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-s_sin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-s_sin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-s_sin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-s_sin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-s_sin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-s_sin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-w_sinh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-w_sinh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-w_sinh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-w_sinh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-w_sinh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-w_sinh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-w_sinh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-w_sinh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-w_sinh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-w_sqrt.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-w_sqrt.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-w_sqrt.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-w_sqrt.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-w_sqrt.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-w_sqrt.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-w_sqrt.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-w_sqrt.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-w_sqrt.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-s_tan.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-s_tan.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-s_tan.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-s_tan.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-s_tan.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-s_tan.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-s_tan.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-s_tan.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-s_tan.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-s_tanh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-s_tanh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-s_tanh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-s_tanh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-s_tanh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-s_tanh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-s_tanh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-s_tanh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-s_tanh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-s_scalbn.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-s_scalbn.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-s_scalbn.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-s_scalbn.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-s_scalbn.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-s_scalbn.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-s_scalbn.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-s_scalbn.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-s_scalbn.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-s_copysign.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h
-s_copysign.o: math_private.h
-s_copysign.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-s_copysign.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-s_copysign.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-s_copysign.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-s_copysign.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-s_copysign.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-s_copysign.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-s_copysign.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-e_acos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-e_acos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-e_acos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-e_acos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-e_acos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-e_acos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-e_acos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-e_acos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-e_acos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-e_asin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-e_asin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-e_asin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-e_asin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-e_asin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-e_asin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-e_asin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-e_asin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-e_asin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-e_atan2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-e_atan2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-e_atan2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-e_atan2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-e_atan2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-e_atan2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-e_atan2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-e_atan2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-e_atan2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-k_cos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-k_cos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-k_cos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-k_cos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-k_cos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-k_cos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-k_cos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-k_cos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-k_cos.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-e_cosh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-e_cosh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-e_cosh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-e_cosh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-e_cosh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-e_cosh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-e_cosh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-e_cosh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-e_cosh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-e_exp.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-e_exp.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-e_exp.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-e_exp.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-e_exp.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-e_exp.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-e_exp.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-e_exp.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-e_exp.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-e_fmod.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-e_fmod.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-e_fmod.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-e_fmod.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-e_fmod.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-e_fmod.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-e_fmod.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-e_fmod.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-e_fmod.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-e_log.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-e_log.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-e_log.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-e_log.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-e_log.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-e_log.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-e_log.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-e_log.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-e_log.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-e_log10.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-e_log10.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-e_log10.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-e_log10.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-e_log10.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-e_log10.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-e_log10.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-e_log10.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-e_log10.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-e_pow.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-e_pow.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-e_pow.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-e_pow.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-e_pow.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-e_pow.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-e_pow.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-e_pow.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-e_pow.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-k_sin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-k_sin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-k_sin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-k_sin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-k_sin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-k_sin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-k_sin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-k_sin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-k_sin.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-e_sinh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-e_sinh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-e_sinh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-e_sinh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-e_sinh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-e_sinh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-e_sinh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-e_sinh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-e_sinh.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-e_sqrt.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-e_sqrt.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-e_sqrt.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-e_sqrt.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-e_sqrt.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-e_sqrt.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-e_sqrt.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-e_sqrt.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-e_sqrt.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-k_tan.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h math_private.h
-k_tan.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-k_tan.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-k_tan.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-k_tan.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-k_tan.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-k_tan.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-k_tan.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-k_tan.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-e_rem_pio2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h
-e_rem_pio2.o: math_private.h
-e_rem_pio2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-e_rem_pio2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-e_rem_pio2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-e_rem_pio2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-e_rem_pio2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-e_rem_pio2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-e_rem_pio2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-e_rem_pio2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
-k_rem_pio2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/math.h
-k_rem_pio2.o: math_private.h
-k_rem_pio2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-k_rem_pio2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-k_rem_pio2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-k_rem_pio2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-k_rem_pio2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-k_rem_pio2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-k_rem_pio2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-k_rem_pio2.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/arch/mips/include/endian.h
+w_acos.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+w_acos.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+w_acos.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+w_acos.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+w_acos.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+w_acos.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+w_acos.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+w_acos.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+w_acos.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+w_asin.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+w_asin.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+w_asin.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+w_asin.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+w_asin.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+w_asin.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+w_asin.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+w_asin.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+w_asin.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+s_atan.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+s_atan.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+s_atan.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+s_atan.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+s_atan.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+s_atan.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+s_atan.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+s_atan.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+s_atan.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+w_atan2.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+w_atan2.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+w_atan2.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+w_atan2.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+w_atan2.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+w_atan2.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+w_atan2.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+w_atan2.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+w_atan2.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+s_ceil.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+s_ceil.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+s_ceil.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+s_ceil.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+s_ceil.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+s_ceil.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+s_ceil.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+s_ceil.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+s_ceil.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+s_cos.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+s_cos.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+s_cos.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+s_cos.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+s_cos.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+s_cos.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+s_cos.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+s_cos.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+s_cos.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+w_cosh.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+w_cosh.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+w_cosh.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+w_cosh.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+w_cosh.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+w_cosh.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+w_cosh.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+w_cosh.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+w_cosh.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+w_exp.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+w_exp.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+w_exp.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+w_exp.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+w_exp.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+w_exp.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+w_exp.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+w_exp.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+w_exp.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+s_expm1.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+s_expm1.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+s_expm1.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+s_expm1.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+s_expm1.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+s_expm1.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+s_expm1.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+s_expm1.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+s_expm1.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+s_fabs.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+s_fabs.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+s_fabs.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+s_fabs.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+s_fabs.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+s_fabs.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+s_fabs.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+s_fabs.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+s_fabs.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+s_floor.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+s_floor.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+s_floor.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+s_floor.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+s_floor.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+s_floor.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+s_floor.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+s_floor.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+s_floor.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+w_fmod.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+w_fmod.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+w_fmod.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+w_fmod.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+w_fmod.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+w_fmod.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+w_fmod.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+w_fmod.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+w_fmod.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+s_frexp.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+s_frexp.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+s_frexp.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+s_frexp.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+s_frexp.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+s_frexp.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+s_frexp.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+s_frexp.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+s_frexp.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+w_log.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+w_log.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+w_log.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+w_log.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+w_log.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+w_log.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+w_log.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+w_log.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+w_log.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+w_log10.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+w_log10.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+w_log10.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+w_log10.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+w_log10.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+w_log10.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+w_log10.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+w_log10.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+w_log10.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+s_modf.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+s_modf.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+s_modf.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+s_modf.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+s_modf.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+s_modf.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+s_modf.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+s_modf.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+s_modf.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+w_pow.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+w_pow.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+w_pow.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+w_pow.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+w_pow.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+w_pow.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+w_pow.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+w_pow.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+w_pow.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+s_sin.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+s_sin.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+s_sin.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+s_sin.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+s_sin.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+s_sin.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+s_sin.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+s_sin.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+s_sin.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+w_sinh.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+w_sinh.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+w_sinh.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+w_sinh.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+w_sinh.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+w_sinh.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+w_sinh.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+w_sinh.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+w_sinh.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+w_sqrt.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+w_sqrt.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+w_sqrt.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+w_sqrt.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+w_sqrt.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+w_sqrt.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+w_sqrt.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+w_sqrt.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+w_sqrt.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+s_tan.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+s_tan.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+s_tan.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+s_tan.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+s_tan.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+s_tan.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+s_tan.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+s_tan.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+s_tan.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+s_tanh.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+s_tanh.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+s_tanh.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+s_tanh.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+s_tanh.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+s_tanh.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+s_tanh.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+s_tanh.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+s_tanh.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+s_scalbn.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+s_scalbn.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+s_scalbn.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+s_scalbn.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+s_scalbn.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+s_scalbn.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+s_scalbn.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+s_scalbn.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+s_scalbn.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+s_copysign.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+s_copysign.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+s_copysign.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+s_copysign.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+s_copysign.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+s_copysign.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+s_copysign.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+s_copysign.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+s_copysign.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+e_acos.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+e_acos.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+e_acos.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+e_acos.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+e_acos.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+e_acos.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+e_acos.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+e_acos.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+e_acos.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+e_asin.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+e_asin.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+e_asin.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+e_asin.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+e_asin.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+e_asin.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+e_asin.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+e_asin.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+e_asin.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+e_atan2.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+e_atan2.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+e_atan2.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+e_atan2.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+e_atan2.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+e_atan2.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+e_atan2.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+e_atan2.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+e_atan2.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+k_cos.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+k_cos.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+k_cos.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+k_cos.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+k_cos.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+k_cos.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+k_cos.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+k_cos.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+k_cos.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+e_cosh.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+e_cosh.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+e_cosh.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+e_cosh.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+e_cosh.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+e_cosh.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+e_cosh.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+e_cosh.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+e_cosh.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+e_exp.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+e_exp.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+e_exp.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+e_exp.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+e_exp.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+e_exp.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+e_exp.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+e_exp.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+e_exp.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+e_fmod.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+e_fmod.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+e_fmod.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+e_fmod.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+e_fmod.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+e_fmod.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+e_fmod.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+e_fmod.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+e_fmod.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+e_log.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+e_log.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+e_log.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+e_log.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+e_log.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+e_log.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+e_log.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+e_log.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+e_log.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+e_log10.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+e_log10.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+e_log10.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+e_log10.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+e_log10.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+e_log10.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+e_log10.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+e_log10.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+e_log10.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+e_pow.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+e_pow.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+e_pow.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+e_pow.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+e_pow.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+e_pow.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+e_pow.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+e_pow.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+e_pow.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+k_sin.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+k_sin.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+k_sin.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+k_sin.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+k_sin.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+k_sin.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+k_sin.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+k_sin.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+k_sin.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+e_sinh.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+e_sinh.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+e_sinh.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+e_sinh.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+e_sinh.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+e_sinh.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+e_sinh.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+e_sinh.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+e_sinh.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+e_sqrt.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+e_sqrt.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+e_sqrt.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+e_sqrt.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+e_sqrt.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+e_sqrt.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+e_sqrt.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+e_sqrt.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+e_sqrt.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+k_tan.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+k_tan.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+k_tan.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+k_tan.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+k_tan.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+k_tan.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+k_tan.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+k_tan.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+k_tan.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+e_rem_pio2.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+e_rem_pio2.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+e_rem_pio2.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+e_rem_pio2.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+e_rem_pio2.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+e_rem_pio2.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+e_rem_pio2.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+e_rem_pio2.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+e_rem_pio2.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h
+k_rem_pio2.o: /home/xwh/work/tz-vpx/include/math.h math_private.h
+k_rem_pio2.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+k_rem_pio2.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+k_rem_pio2.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+k_rem_pio2.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+k_rem_pio2.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+k_rem_pio2.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+k_rem_pio2.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+k_rem_pio2.o: /home/xwh/work/tz-vpx/sys/arch/mips/include/endian.h

@@ -1,1 +1,1 @@
-#define	NMOD_USB_STORAGE	1
+#define	NMOD_USB_STORAGE	0

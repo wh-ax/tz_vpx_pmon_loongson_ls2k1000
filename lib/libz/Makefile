@@ -62,80 +62,73 @@ ${OBJDIR}/lib${LIB}.a: ${OBJS}
 
 adler32.o: zlib.h zconf.h
 crc32.o: zlib.h zconf.h
-infblock.o: zutil.h zlib.h zconf.h
-infblock.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/stddef.h
-infblock.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-infblock.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/string.h
-infblock.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-infblock.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-infblock.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/stdlib.h
-infblock.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-infblock.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-infblock.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-infblock.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-infblock.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/errno.h infblock.h
-infblock.o: inftrees.h infcodes.h infutil.h
-infcodes.o: zutil.h zlib.h zconf.h
-infcodes.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/stddef.h
-infcodes.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-infcodes.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/string.h
-infcodes.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-infcodes.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-infcodes.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/stdlib.h
-infcodes.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-infcodes.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-infcodes.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-infcodes.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-infcodes.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/errno.h inftrees.h
-infcodes.o: infblock.h infcodes.h infutil.h inffast.h
-inffast.o: zutil.h zlib.h zconf.h
-inffast.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/stddef.h
-inffast.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-inffast.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/string.h
-inffast.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-inffast.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-inffast.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/stdlib.h
-inffast.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-inffast.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-inffast.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-inffast.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-inffast.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/errno.h inftrees.h
-inffast.o: infblock.h infcodes.h infutil.h inffast.h
-inflate.o: zutil.h zlib.h zconf.h
-inflate.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/stddef.h
-inflate.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-inflate.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/string.h
-inflate.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-inflate.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-inflate.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/stdlib.h
-inflate.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-inflate.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-inflate.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-inflate.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-inflate.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/errno.h infblock.h
-inftrees.o: zutil.h zlib.h zconf.h
-inftrees.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/stddef.h
-inftrees.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-inftrees.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/string.h
-inftrees.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-inftrees.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-inftrees.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/stdlib.h
-inftrees.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-inftrees.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-inftrees.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-inftrees.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-inftrees.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/errno.h inftrees.h
-inftrees.o: inffixed.h
-infutil.o: zutil.h zlib.h zconf.h
-infutil.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/stddef.h
-infutil.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
-infutil.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/string.h
-infutil.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/cdefs.h
-infutil.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
-infutil.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/stdlib.h
-infutil.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/types.h
-infutil.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/types.h
-infutil.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
-infutil.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/sys/sys/endian.h
-infutil.o: /home/xwh/work/2k_vpx/pmon-ls2k-vpx/include/errno.h infblock.h
-infutil.o: inftrees.h infcodes.h infutil.h
+infblock.o: zutil.h zlib.h zconf.h /home/xwh/work/tz-vpx/include/stddef.h
+infblock.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+infblock.o: /home/xwh/work/tz-vpx/include/string.h
+infblock.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+infblock.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+infblock.o: /home/xwh/work/tz-vpx/include/stdlib.h
+infblock.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+infblock.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+infblock.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+infblock.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+infblock.o: /home/xwh/work/tz-vpx/include/errno.h infblock.h inftrees.h
+infblock.o: infcodes.h infutil.h
+infcodes.o: zutil.h zlib.h zconf.h /home/xwh/work/tz-vpx/include/stddef.h
+infcodes.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+infcodes.o: /home/xwh/work/tz-vpx/include/string.h
+infcodes.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+infcodes.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+infcodes.o: /home/xwh/work/tz-vpx/include/stdlib.h
+infcodes.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+infcodes.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+infcodes.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+infcodes.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+infcodes.o: /home/xwh/work/tz-vpx/include/errno.h inftrees.h infblock.h
+infcodes.o: infcodes.h infutil.h inffast.h
+inffast.o: zutil.h zlib.h zconf.h /home/xwh/work/tz-vpx/include/stddef.h
+inffast.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+inffast.o: /home/xwh/work/tz-vpx/include/string.h
+inffast.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+inffast.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+inffast.o: /home/xwh/work/tz-vpx/include/stdlib.h
+inffast.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+inffast.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+inffast.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+inffast.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+inffast.o: /home/xwh/work/tz-vpx/include/errno.h inftrees.h infblock.h
+inffast.o: infcodes.h infutil.h inffast.h
+inflate.o: zutil.h zlib.h zconf.h /home/xwh/work/tz-vpx/include/stddef.h
+inflate.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+inflate.o: /home/xwh/work/tz-vpx/include/string.h
+inflate.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+inflate.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+inflate.o: /home/xwh/work/tz-vpx/include/stdlib.h
+inflate.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+inflate.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+inflate.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+inflate.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+inflate.o: /home/xwh/work/tz-vpx/include/errno.h infblock.h
+inftrees.o: zutil.h zlib.h zconf.h /home/xwh/work/tz-vpx/include/stddef.h
+inftrees.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+inftrees.o: /home/xwh/work/tz-vpx/include/string.h
+inftrees.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+inftrees.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+inftrees.o: /home/xwh/work/tz-vpx/include/stdlib.h
+inftrees.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+inftrees.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+inftrees.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+inftrees.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+inftrees.o: /home/xwh/work/tz-vpx/include/errno.h inftrees.h inffixed.h
+infutil.o: zutil.h zlib.h zconf.h /home/xwh/work/tz-vpx/include/stddef.h
+infutil.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/ansi.h
+infutil.o: /home/xwh/work/tz-vpx/include/string.h
+infutil.o: /home/xwh/work/tz-vpx/sys/sys/cdefs.h
+infutil.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/cdefs.h
+infutil.o: /home/xwh/work/tz-vpx/include/stdlib.h
+infutil.o: /home/xwh/work/tz-vpx/sys/sys/types.h
+infutil.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/types.h
+infutil.o: /home/xwh/work/tz-vpx/Targets/LS2K/compile/ls2k/machine/endian.h
+infutil.o: /home/xwh/work/tz-vpx/sys/sys/endian.h
+infutil.o: /home/xwh/work/tz-vpx/include/errno.h infblock.h inftrees.h
+infutil.o: infcodes.h infutil.h

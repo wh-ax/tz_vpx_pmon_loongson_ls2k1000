@@ -1,1 +1,1 @@
-#define	NMOD_USB_OHCI	1
+#define	NMOD_USB_OHCI	0

@@ -1,7 +1,7 @@
-# 1 "/home/xwh/work/2k_vpx/pmon-ls2k-vpx/zloader.ls2k/../Targets/LS2K/conf/LS2K.dts"
+# 1 "/home/xwh/work/tz-vpx/zloader.ls2k/../Targets/LS2K/conf/LS2K.dts"
 # 1 "<built-in>"
 # 1 "<命令行>"
-# 1 "/home/xwh/work/2k_vpx/pmon-ls2k-vpx/zloader.ls2k/../Targets/LS2K/conf/LS2K.dts"
+# 1 "/home/xwh/work/tz-vpx/zloader.ls2k/../Targets/LS2K/conf/LS2K.dts"
 
 
 
@@ -59,7 +59,7 @@
    msi-mask = <0x000000c0 0x40000c00>;
    reg = <0x1fe114a0 0x60>;
   };
-# 70 "/home/xwh/work/2k_vpx/pmon-ls2k-vpx/zloader.ls2k/../Targets/LS2K/conf/LS2K.dts"
+# 70 "/home/xwh/work/tz-vpx/zloader.ls2k/../Targets/LS2K/conf/LS2K.dts"
   dc@0x400c0000 {
    compatible = "loongson,ls-fb";
    reg = <0x400c0000 0x10000
@@ -88,7 +88,7 @@
    interrupt-parent = <&icu>;
    interrupts = <37>;
   };
-# 114 "/home/xwh/work/2k_vpx/pmon-ls2k-vpx/zloader.ls2k/../Targets/LS2K/conf/LS2K.dts"
+# 114 "/home/xwh/work/tz-vpx/zloader.ls2k/../Targets/LS2K/conf/LS2K.dts"
   ohci@0x40070000 {
    compatible = "loongson,ls2k-ohci", "usb-ohci";
    reg = <0x40070000 0x10000>;
@@ -255,7 +255,7 @@
    reg = <0x1fe01800 0x8>;
    interrupt-parent = <&icu>;
    interrupts = <31>;
-# 291 "/home/xwh/work/2k_vpx/pmon-ls2k-vpx/zloader.ls2k/../Targets/LS2K/conf/LS2K.dts"
+# 291 "/home/xwh/work/tz-vpx/zloader.ls2k/../Targets/LS2K/conf/LS2K.dts"
   };
 
   i2c_dvo0:i2c@2{
@@ -305,7 +305,7 @@
    interrupt-parent = <&icu>;
    interrupts = <60>;
   };
-# 360 "/home/xwh/work/2k_vpx/pmon-ls2k-vpx/zloader.ls2k/../Targets/LS2K/conf/LS2K.dts"
+# 360 "/home/xwh/work/tz-vpx/zloader.ls2k/../Targets/LS2K/conf/LS2K.dts"
   pwm0: pwm@1fe02000{
    compatible = "loongson,ls2k-pwm";
    reg = <0x1fe02000 0x10>;
@@ -377,7 +377,7 @@
    dma-channels = <1>;
    dma-requests = <1>;
   };
-# 453 "/home/xwh/work/2k_vpx/pmon-ls2k-vpx/zloader.ls2k/../Targets/LS2K/conf/LS2K.dts"
+# 453 "/home/xwh/work/tz-vpx/zloader.ls2k/../Targets/LS2K/conf/LS2K.dts"
   i2s: i2s@0x1fe0d000 {
    compatible = "loongson,ls-i2s";
    reg = <0x1fe0d000 0x10>;
@@ -399,7 +399,7 @@
    loongson,i2s-controller = <&i2s>;
    loongson,audio-codec = <&audio>;
   };
-# 500 "/home/xwh/work/2k_vpx/pmon-ls2k-vpx/zloader.ls2k/../Targets/LS2K/conf/LS2K.dts"
+# 500 "/home/xwh/work/tz-vpx/zloader.ls2k/../Targets/LS2K/conf/LS2K.dts"
   hwmon@0x1fe07000{
    #address-cells = <1>;
    #size-cells = <1>;
