@@ -213,13 +213,13 @@ void initmips(unsigned long long  raw_memsz)
 	unsigned int hi;
 	unsigned long long memsz;
 	unsigned short i;
-	//xwh 2025.4.26 set GPIO40、41 OUT,low level
+	//xwh 2025.4.26 set GPIO40 off、41 on -- OUT
 #if 1
 	*(volatile unsigned int *)0xbfe10420 &= ~(1<<20);
-    	*(volatile unsigned int *)0xbfe10500 &= ~(1<<40);
-	*(volatile unsigned int *)0xbfe10500 &= ~(1<<41);
-	*(volatile unsigned int *)0xbfe10510 &= ~(1<<40);
-	*(volatile unsigned int *)0xbfe10510 &= ~(1<<41);
+	*(volatile unsigned int *)0xbfe10504 &= ~(1<<8);
+	*(volatile unsigned int *)0xbfe10504 &= ~(1<<9);
+	*(volatile unsigned int *)0xbfe10514 |= (1<<9);
+	*(volatile unsigned int *)0xbfe10514 &= ~(1<<8);
 #endif
 #ifndef NO_SMP 
 	//core1 run wait_for_smp_call function in ram
@@ -239,24 +239,25 @@ void initmips(unsigned long long  raw_memsz)
 	*(volatile unsigned int *)0xbfe10428 |= (1 << 3);	//uart5 enable
 	
 	//set GPIO49,50 GPIO0_OEN  --- OUT MODE
-	*(volatile unsigned int *)0xbfe10500 |= (0 << 49);
-	*(volatile unsigned int *)0xbfe10500 |= (0 << 50);
+//	*(volatile unsigned int *)0xbfe10500 |= (0 << 49);
+//	*(volatile unsigned int *)0xbfe10500(0 << 50);
 	//set GPIO49,50 out level --- high level
-	*(volatile unsigned int *)0xbfe10510 |= (1 << 49);
+/*	*(volatile unsigned int *)0xbfe10510 |= (1 << 49);
 	*(volatile unsigned int *)0xbfe10510 |= (1 << 50);
-	
+*/	
 	//set GPIO(56-62) GPIO_OEN --- INT MODE
-	*(volatile unsigned int *)0xbfe10500 |= 0x7F00000000000000;
+//	*(volatile unsigned int *)0xbfe10500 |= 0x7F00000000000000;
 	//set GPIO(51-55) level --- high level
+	/*
 	*(volatile unsigned int *)0xbfe10510 |= (1 << 51);
 	*(volatile unsigned int *)0xbfe10510 |= (1 << 52);
 	*(volatile unsigned int *)0xbfe10510 |= (1 << 53);
 	*(volatile unsigned int *)0xbfe10510 |= (1 << 54);
 	*(volatile unsigned int *)0xbfe10510 |= (1 << 55);
 	//set GPIO(20-22) OUT HIGH LEVEL
-	*(volatile unsigned int *)0xbfe10500 |= (0 << 20);
-	*(volatile unsigned int *)0xbfe10500 |= (0 << 21);
-	*(volatile unsigned int *)0xbfe10500 |= (0 << 22);
+//	*(volatile unsigned int *)0xbfe10500 |= (0 << 20);
+//	*(volatile unsigned int *)0xbfe10500 |= (0 << 21);
+//	*(volatile unsigned int *)0xbfe10500 |= (0 << 22);
 	*(volatile unsigned int *)0xbfe10510 |= 0x700000;
 
 	//set GPIO 40,41 2Hz
@@ -267,11 +268,11 @@ void initmips(unsigned long long  raw_memsz)
         *(volatile unsigned int *)0xbfe10510 |= 0x700000;
 #endif
 	//set GPIO35,29 OUT LOW LEVEL
-	*(volatile unsigned int *)0xbfe10500 |= (0<<35);
-	*(volatile unsigned int *)0xbfe10500 |= (0<<29);
+//	*(volatile unsigned int *)0xbfe10500 |= (0<<35);
+//	*(volatile unsigned int *)0xbfe10500 |= (0<<29);
 	*(volatile unsigned int *)0xbfe10510 |= (0<<35);
 	*(volatile unsigned int *)0xbfe10510 |= (0<<29);
-
+*/
 	//PWM3 1Hz(1:1)占空比
 	*(volatile unsigned int *)0xbfe10420 |= (1<<15);        //enable pwm3 --xwh 2022.6.29
 	*(volatile unsigned int *)0xbfe02034 = 0x3B9ACA0;
@@ -313,6 +314,8 @@ void initmips(unsigned long long  raw_memsz)
 	*(volatile unsigned long long *)(0xbfe10458) = 0x1001;
 	while( ((readl(0xbfe1045c)) & (0x1 << 2)) == 0 );
 	TPRINTD("=== after reset ====phy reg 0x1001: 0x%x\n", ((*(volatile unsigned int *)(0xbfe10458)) >> 16));
+//	TPRINTD("=== xwh ===========xxxxxxxx=========:==phy reg 0x0500: 0x%064lx\n ",(*(volatile unsigned int *)(0xbfe10500)));
+
 #endif
 	dbginit(NULL);
 

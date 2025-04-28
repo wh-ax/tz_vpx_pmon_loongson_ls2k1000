@@ -778,7 +778,7 @@ static int get_ahci_device_data(struct ahci_sata_softc *sc, u8 * fis, int fis_le
         PRINTD("AHCI SATA error: CI is set when START is zero!\n");
     };
 #ifdef SATA_RESET
-	int count = 5;
+	int count = 20;
 	while(count > 0)
 	{
 		writel_with_flush(1, port_mmio + PORT_CMD_ISSUE);
