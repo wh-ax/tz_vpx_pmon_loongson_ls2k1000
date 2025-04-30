@@ -259,7 +259,7 @@
 			interrupts = <30>;
 			#address-cells = <1>;
 			#size-cells = <0>;
-			rtc@68{
+			/*rtc@68{
 				compatible = "dallas,ds1338";
 				reg = <0x68>;
 			};
@@ -267,7 +267,7 @@
 				compatible = "atmel,24c16";
 				reg = <0x57>;
 				pagesize = <16>;
-			};
+			};*/
 		};
 		i2c1: i2c@1fe01800{
 			#address-cells = <1>;
@@ -281,12 +281,12 @@
 				compatible = "codec_uda1342";
 				reg = <0x1a>;
 			};*/
-            		/*rtc@51{
+            		rtc@51{
                     		compatible = "em3027";
 		                reg = <0x51>;
                     		interrupt-parent = <&icu>;
 			        interrupts = <70>;
-                    	};*/
+                    	};
 
 		};
 
@@ -331,12 +331,12 @@
 				reg = <0>;
 			};
 		};
-		rtc0: rtc@1fe07800{
+		/*rtc0: rtc@1fe07800{
 			compatible = "loongson,ls-rtc";
 			reg = <0x1fe07800 0x100>;
 			interrupt-parent = <&icu>;
 			interrupts = <60>;
-		};
+		};*/
 
 		/* CAN controller nodes:
 		 * If you want to use the "can" function,enable the "can"

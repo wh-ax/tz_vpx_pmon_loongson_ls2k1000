@@ -320,7 +320,7 @@ static int show_main(int flag, const char* path)
 	memcpy(str_line + sizeof(str_line) - strlen(tmp) - 1, tmp, strlen(tmp));
 	__cprint(bottom_height + 2,0,0,COLOR,str_line);;
 // xwh uart disabled 20241130
-#if 1
+#if 0
 	while (1)			
 	{
 		
